@@ -1,0 +1,75 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "7416b6da5e9bbbaec76660a43103a319",
+    "entities": [
+      {
+        "tableName": "entrenamientos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idEntrenamiento` TEXT NOT NULL, `fecha` INTEGER, `horas` INTEGER NOT NULL, `minutos` INTEGER NOT NULL, `segundos` INTEGER NOT NULL, `metros` INTEGER NOT NULL, `minutosKm` REAL NOT NULL, `velocidadmediakmporhora` REAL NOT NULL, PRIMARY KEY(`idEntrenamiento`))",
+        "fields": [
+          {
+            "fieldPath": "idEntrenamiento",
+            "columnName": "idEntrenamiento",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fecha",
+            "columnName": "fecha",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "horas",
+            "columnName": "horas",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minutos",
+            "columnName": "minutos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "segundos",
+            "columnName": "segundos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "metros",
+            "columnName": "metros",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minutosKm",
+            "columnName": "minutosKm",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "velocidadmediakmporhora",
+            "columnName": "velocidadmediakmporhora",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "idEntrenamiento"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"7416b6da5e9bbbaec76660a43103a319\")"
+    ]
+  }
+}

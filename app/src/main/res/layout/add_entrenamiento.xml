@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_edition"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/añadirEntrenamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="none"
+        android:text="@string/añadir_entreno"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="17dp"
+        tools:ignore="TextViewEdits" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="@string/Fecha"
+        android:textColor="#020202"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/edFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="1"
+        android:hint="@string/Fecha"
+        android:maxLines="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:autofillHints=""
+        android:inputType="none"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="#2962FF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Tiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/Tiempo"
+        android:textColor="#020202"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint="@string/Horas"
+            android:inputType="number"
+            android:textColor="#2962FF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edMinutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint="@string/Minutos"
+            android:inputType="number"
+            android:textColor="#2962FF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edSegundos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint="@string/Segundos"
+            android:inputType="number"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Metros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="@string/Metros"
+        android:textColor="#020202"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <EditText android:id="@+id/edMetros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_weight="1"
+        android:hint="@string/Metros"
+        android:maxLines="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:textColor="#2962FF"
+        android:textSize="12sp"/>
+
+
+
+</LinearLayout>

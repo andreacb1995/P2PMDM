@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Añadir nuevo entrenamiento"
+    android:id="@+id/añadirEntrenamiento" />
+    <item android:title="Modificar"
+        android:id="@+id/modificar" />
+    <item android:title="Eliminar"
+        android:id="@+id/eliminar" />
+    <item android:title="Estadísticas"
+        android:id="@+id/estadisticase" />
+
+</menu>
